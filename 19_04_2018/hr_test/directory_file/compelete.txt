@@ -1,0 +1,109 @@
+Create Form
+	Select From List By Label	name=type_form	Move department
+	Input Text		name=user_subject		Over time
+	Select From List By Label	name=user_to[]	Ms.Sirithida (sirithida.kanchan@nitto.com)
+	Choose File	id=upload		C:\\Users\\sirithida.k\\Desktop\\Hr_test\\Hello.txt
+	Input Text		name=user_detail		Because :
+	Input Text		name=user_id		602078
+	Wait Until Element Is Visible	xpath=//*[@id="ui-id-1"]/li/div		15
+	Mouse Over	xpath=//*[@id="ui-id-1"]/li/div
+	Click Element	class=ui-menu-item-wrapper
+	Input Text		name=comment		Test systems
+	Select From List By Label	name=hos_approve	Ms.Sirithida
+	Select From List By Label	name=hod_approve	Ms.Sirithida
+	Click Element	id=btn_submit
+Create Type Form
+	Click Element	id=menu
+	Click Element	id=typeform
+	Input Text		name=new_type		Move Section
+	Click Element	id=submit_newtype
+Update Type Form 
+	Click Element	id=menu
+	Click Element	id=typeform
+	Click Element	xpath=//*[@id="datatable"]/tbody/tr[2]/td[3]/a[1]
+	Input Text		name=new_type	Request memo 
+	Click Element	id=submit_newtype		
+Delete Type Form 
+	Click Element	id=menu
+	Wait Until Element Is Visible	id=typeform
+	Click Element	id=typeform
+	Wait Until Element Is Visible	xpath=//*[@id="datatable"]/tbody/tr[3]/td[3]/a[2]
+	Click Element	xpath=//*[@id="datatable"]/tbody/tr[3]/td[3]/a[2]
+	Alert Should Be Present	
+Create Division
+	Click Element	id=menu
+	Click Element	id=division
+	Input Text		name=div_name	Information 
+	Click Element	id=submit_divis
+Update Division
+	Click Element	xpath=//*[@id="datatable"]/tbody/tr[2]/td[3]/a[1]
+	Input Text		name=div_name	Technology
+	Click Element	id=submit_divis	
+Delete Division
+	Click Element	id=menu
+	Wait Until Element Is Visible	id=division
+	Click Element	id=division
+	Wait Until Element Is Visible	xpath=//*[@id="datatable"]/tbody/tr[8]/td[3]/a[2]
+	Click Element	xpath=//*[@id="datatable"]/tbody/tr[8]/td[3]/a[2]
+	Alert Should Be Present	
+Create Depart
+	Click Element	id=menu
+	Click Element	id=depart
+	Input Text		name=depart_name		Hello world
+	Click Element	name=submit_depart
+Update Depart
+	Click Element	id=menu
+	Click Element	id=depart
+	Click Element	xpath=//*[@id="datatable"]/tbody/tr/td[4]/a[1]
+	Input Text		name=depart_name		paper
+	Click Element	name=submit_depart
+Delete Depart
+	Click Element	id=menu
+	Wait Until Element Is Visible	id=depart
+	Click Element	id=depart
+	Wait Until Element Is Visible	xpath=//*[@id="datatable"]/tbody/tr[2]/td[4]/a[2]
+	Click Element	xpath=//*[@id="datatable"]/tbody/tr[2]/td[4]/a[2]
+	Alert Should Be Present	
+Create Section
+	Click Element	id=menu
+	Wait Until Element Is Visible	id=section
+	Click Element	id=section
+	Input Text		name=sec_id		965
+	Input Text		name=sec_name		keyboard
+	Click Element	name=submit_sec	
+Update Section
+	Click Element	id=menu
+	Wait Until Element Is Visible	id=section
+	Click Element	id=section
+	Input Text		name=sec_name		Notebook
+	Click Element	name=submit_sec		
+Delete Type Form 
+	Click Element	id=menu
+	Wait Until Element Is Visible	id=section
+	Click Element	id=section
+	Wait Until Element Is Visible	xpath=//*[@id="datatable"]/tbody/tr[2]/td[4]/a[2]
+	Click Element	xpath=//*[@id="datatable"]/tbody/tr[2]/td[4]/a[2]
+	Alert Should Be Present	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

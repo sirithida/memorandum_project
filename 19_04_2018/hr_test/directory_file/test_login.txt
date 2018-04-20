@@ -1,0 +1,43 @@
+*** Settings ***
+
+Library  Selenium2Library
+
+*** Test Cases ***
+
+Login Test
+	Open Browser	http://10.152.1.77/hr_test/	
+	Input Text		name=username	sirithida.k
+	Input Password	name=password	Nampetchsr16	
+	Click Element	id=login-submit
+
+Delete Section
+	Click Element	id=menu
+	Wait Until Element Is Visible	id=section
+	Click Element	id=section
+	Click Element	xpath=//*[@id="datatable"]/tbody/tr[8]/td[5]/a[2]
+	Click button	name=btn_delete 		
+	Alert alt=driver.switchTo().alert();
+	alt.dismiss();
+	//alt.accept();
+	
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+	
+	

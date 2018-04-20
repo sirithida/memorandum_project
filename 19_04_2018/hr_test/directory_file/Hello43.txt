@@ -1,0 +1,1 @@
+select * from sdm_issue_item  where issue_id = เลขที่เค้าบอกมา
